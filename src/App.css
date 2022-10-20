@@ -1,0 +1,64 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: "Segoe UI";
+}
+.quiz-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #cff7f1, #70e2da);
+}
+.quiz-container__question {
+  border-radius: 0.5rem;
+  height: 700px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #3f50b5;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  box-shadow: 0px 10px 40px #999;
+}
+.quiz-container__options {
+  padding: 2rem;
+  border-top: 1px solid #ccc;
+}
+.quiz-container__ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  list-style-type: none;
+}
+.quiz-container__li {
+  padding: 1rem;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.quiz-container__li:hover {
+  box-shadow: 0px 1px 10px #fff;
+}
+
+
+
+@media only screen and (min-width: 310px) and (max-width: 969px) {  
+  .card
+   { 
+    width:300px;
+    height: 400px;
+    margin: 0;
+  }
+}
